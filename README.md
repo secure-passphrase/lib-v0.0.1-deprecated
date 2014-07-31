@@ -2,7 +2,7 @@
 
 Lightweight libraries for generating secure passphrases and converting passphrases to/from cryptographic keys.
 
-Default dictionary used here is an 8K short common english word condensate of Alan Beale's public domain ("2 of 12") dictionary.  Any dictionary can be used - see link below for custome dictionary creation tool.
+Default dictionary used here is an 8K short common english word condensate of Alan Beale's public domain ("2 of 12") dictionary.  Any dictionary can be used - see link below for custom dictionary creation tool.
 
 Key to phrase and phrase to key conversion follows RFC1751 conventions.
 
