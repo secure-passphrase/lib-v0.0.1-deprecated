@@ -4,8 +4,6 @@ Lightweight libraries for generating secure passphrases and converting passphras
 
 Default dictionary used here is an 8K short common english word condensate of Alan Beale's public domain ("2 of 12") dictionary.  Any dictionary can be used - see link below for custom dictionary creation tool.
 
-Key to phrase and phrase to key conversion follows RFC1751 conventions.
-
 Currently implemented is a Javascript library.
 
 <h4>lib/js Overview</h4>
@@ -18,7 +16,7 @@ Currently implemented is a Javascript library.
    
   <code>Passphrase.randomNum</code> is the random number generator used. Is expected to return a number between 0 and 1.  Math.random is default. Can and should be set to a function that uses SecureRandom if available.
 
-2. Create passphrase from numeric key and vise-versa
+2. Create passphrase from numeric key and vise-versa (ala RFC1751)
   
   <code>pass = Passphrase.fromKey( key [, dictionary] )</code>
 
@@ -39,8 +37,8 @@ Example: a 32 byte key and 8K (8192) word dictionary will produce 20 word passph
 Dictionary length should be a power of 2, otherwise some of the words will not be used.  For example, only the first 4K words will be used from a dictionary containing 6K words.
 
 Test tool:
-    http://secure-passphrase.github.com/tools/test.html
+     http://secure-passphrase.github.io/tools/test.html
 
 Custom dictionary creation tool:
-    http://secure-passphrase.github.com/tools/dictionary.html
+     http://secure-passphrase.github.io/tools/dictionary.html
 
